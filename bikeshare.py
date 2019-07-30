@@ -17,7 +17,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!\n')
+    print('Welcome!\n This tool can be used to analyse the US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     city = ''
@@ -95,7 +95,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating popular time of travel...\n')
     start_time = time.time()
 
     # TO DO: display the most common month
@@ -115,13 +115,12 @@ def time_stats(df):
     common_hour = df['hour'].mode()[0]   # find the most common hour (from 0 to 23)
     print('Most Common Start Hour:', common_hour)
               
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating popular stations and trip...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
@@ -137,14 +136,13 @@ def station_stats(df):
     most_frequent_trip = df['Trip'].mode()[0] # find the most frequent combination of start and end station
     print('The most frequent combination of start and end station is:', most_frequent_trip)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating trip duration...\n')
     start_time = time.time()
 
     # TO DO: display total travel time
@@ -160,14 +158,13 @@ def trip_duration_stats(df):
     print('Mean Travel Time in Seconds:', int(mean_travel_time))
     print('Mean Travel Time in Minutes:', int(mean_travel_time/60))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
+    print('\nCalculating user info...\n')
     start_time = time.time()
 
     # TO DO: Display counts of user types
@@ -194,8 +191,7 @@ def user_stats(df):
     except:
         print('No year of birth data available')
                                                 
-                                                
-    print("\nThis took %s seconds." % (time.time() - start_time))
+                                               
     print('-'*40)
 
     
