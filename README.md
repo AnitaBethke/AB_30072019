@@ -15,5 +15,8 @@ washington.csv
 ### Project management
 Analyst: Anita Bethke
 
+### Tool development
+Owner: Anita Bethke
+
 ### Credits
 Thanks to Udacity.
