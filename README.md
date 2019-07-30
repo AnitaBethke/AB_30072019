@@ -12,5 +12,8 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
+### Project management
+Analyst: Anita Bethke
+
 ### Credits
 Thanks to Udacity.
